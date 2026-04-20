@@ -84,7 +84,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:99;padding:16px 48px;display:fle
 .who-card p{font-size:14.5px;color:rgba(245,244,240,0.55);line-height:1.6;font-weight:300}
 .who-symptoms{list-style:none;max-width:780px;margin:40px auto 0;border-top:1px solid rgba(255,255,255,0.07);padding-top:36px}
 .who-symptoms li{font-size:15px;color:rgba(245,244,240,0.65);padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.07);display:flex;gap:12px;align-items:flex-start;font-weight:300}
-.who-symptoms li strong{font-weight:600;color:var(--white);background:rgba(200,160,0,0.18);padding:1px 5px;border-bottom:1px solid rgba(200,160,0,0.6)}
+.who-symptoms li strong{font-weight:600;color:var(--gold-light)}
 .who-symptoms li::before{content:"→";color:var(--gold);font-weight:700;flex-shrink:0}
 .what-bullets{list-style:none;padding:0;margin:0}
 .what-bullets li{font-size:15px;color:rgba(245,244,240,0.65);padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.07);display:flex;gap:14px;align-items:flex-start;font-weight:300;line-height:1.6}
@@ -321,12 +321,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
     </div>
     <h3 class="who-symptoms-heading">Can you answer yes to any of the following?</h3>
     <ul class="who-symptoms">
-      <li>Do you have to rely on your gut when reports are <strong>not ready on time</strong> or <strong>reliable</strong>?</li>
-      <li>Do your numbers always arrive <strong>too late</strong>?</li>
-      <li>Are your <strong>margins slipping</strong> without anyone noticing?</li>
-      <li>Is <strong>cash locked in inventory</strong> with no one able to explain why?</li>
-      <li>Does every site give you a <strong>different story</strong>?</li>
-      <li>Do you find out about <strong>order problems</strong> after the customer already has?</li>
+      <li><strong>Never ready</strong> — Do you have to rely on your gut when reports aren't there when you need them?</li>
+      <li><strong>Too late</strong> — By the time the numbers land, the moment has passed.</li>
+      <li><strong>Margins slipping</strong> — Without anyone noticing until it's too late.</li>
+      <li><strong>Cash locked in inventory</strong> — With no one able to explain where or why.</li>
+      <li><strong>Different story</strong> — Every site gives you a different version of the truth.</li>
+      <li><strong>Order problems</strong> — You find out after the customer already has.</li>
     </ul>
   </div>
 </section>
@@ -374,7 +374,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
           <li>Margin erosion tracked by customer and segment</li>
           <li>Filter by year, region, and customer segment</li>
         </ul>
-        <a href="#" class="btn-report" onclick="openDashboard('biprism_dashboard_v2.html','Customer &amp; Sales — Live Dashboard');return false;">View Dashboard →</a>
+        <a href="#" class="btn-report" onclick="openDashboard('https://biprism.github.io/Sample-Reports/sales_dashboard.html','Customer &amp; Sales — Live Dashboard');return false;">View Dashboard →</a>
       </div>
 
       <div class="outcome-card">
@@ -387,7 +387,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
           <li>Overstocked SKUs and working capital tied up</li>
           <li>Filter by year, warehouse, and category</li>
         </ul>
-        <a href="#" class="btn-report" onclick="openDashboard('biprism_inventory_mockup.html','Inventory Analysis — Live Dashboard');return false;">View Dashboard →</a>
+        <a href="#" class="btn-report" onclick="openDashboard('https://biprism.github.io/Sample-Reports/biprism_inventory_mockup.html','Inventory Analysis — Live Dashboard');return false;">View Dashboard →</a>
       </div>
 
       <div class="outcome-card">
