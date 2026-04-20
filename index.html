@@ -84,6 +84,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:99;padding:16px 48px;display:fle
 .who-card p{font-size:14.5px;color:rgba(245,244,240,0.55);line-height:1.6;font-weight:300}
 .who-symptoms{list-style:none;max-width:780px;margin:40px auto 0;border-top:1px solid rgba(255,255,255,0.07);padding-top:36px}
 .who-symptoms li{font-size:15px;color:rgba(245,244,240,0.65);padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.07);display:flex;gap:12px;align-items:flex-start;font-weight:300}
+.who-symptoms li strong{font-weight:600;color:var(--white);background:rgba(200,160,0,0.18);padding:1px 5px;border-bottom:1px solid rgba(200,160,0,0.6)}
 .who-symptoms li::before{content:"→";color:var(--gold);font-weight:700;flex-shrink:0}
 .what-bullets{list-style:none;padding:0;margin:0}
 .what-bullets li{font-size:15px;color:rgba(245,244,240,0.65);padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.07);display:flex;gap:14px;align-items:flex-start;font-weight:300;line-height:1.6}
@@ -150,7 +151,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:99;padding:16px 48px;display:fle
 .delivery-inner>h2{font-family:var(--font-display);font-size:clamp(28px,4vw,42px);font-weight:700;text-transform:uppercase;margin-bottom:8px;text-align:center}
 .delivery-inner>h2 em{color:var(--gold);font-style:normal}
 .delivery-inner>.sub{text-align:center;color:rgba(245,244,240,0.65);font-weight:300;font-size:16px;margin-bottom:48px}
-.delivery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.delivery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
 .delivery-card{background:#1a1a1a;padding:36px 28px}
 .delivery-card h3{font-family:var(--font-display);font-size:18px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
 .delivery-card p{font-size:14.5px;color:rgba(245,244,240,0.55);line-height:1.6;font-weight:300}
@@ -318,13 +319,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
         <h3>Engineering Firms</h3>
       </div>
     </div>
+    <h3 class="who-symptoms-heading">Can you answer yes to any of the following?</h3>
     <ul class="who-symptoms">
-      <li>Decisions still rely on gut feel — not because data is absent, but because it is never ready when needed</li>
-      <li>Numbers take hours to produce and are already out of date by the time they arrive</li>
-      <li>Margins shrink without anyone noticing until it is too late</li>
-      <li>Inventory ties up cash but nobody knows exactly where or why</li>
-      <li>Multi-site or multi-team operations with no single consistent view</li>
-      <li>Customer churn or order problems only become visible after the fact</li>
+      <li>Do you have to rely on your gut when reports are <strong>not ready on time</strong> or <strong>reliable</strong>?</li>
+      <li>Do your numbers always arrive <strong>too late</strong>?</li>
+      <li>Are your <strong>margins slipping</strong> without anyone noticing?</li>
+      <li>Is <strong>cash locked in inventory</strong> with no one able to explain why?</li>
+      <li>Does every site give you a <strong>different story</strong>?</li>
+      <li>Do you find out about <strong>order problems</strong> after the customer already has?</li>
     </ul>
   </div>
 </section>
@@ -334,7 +336,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
   <div class="section-who-inner fade-in">
     <p class="eyebrow">What I Do</p>
     <h2>Turn Scattered Data into <em>Clear Decisions</em></h2>
-    <p class="sub">Built on real operations experience. No infrastructure changes required.</p>
+    <p class="sub">Built on real operations experience.</p>
     <div class="section-inner">
       <div>
         <ul class="what-bullets">
@@ -342,6 +344,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
           <li>I work with what is already there: ERP systems, Excel, SharePoint, SQL databases</li>
           <li>No system replacements or upgrades required to get started</li>
           <li>The difference between a dashboard that gets used and one that collects dust is whether it was built around how the business actually works</li>
+          <li>Sometimes the starting point is figuring out where your data actually lives — or whether it gets captured at all. That is part of the work too.</li>
         </ul>
       </div>
       <div style="text-align:center">
@@ -424,6 +427,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
         <div class="step">
           <p class="step-title">Grow</p>
           <p class="step-desc">Additional modules, data sources, or teams added as needed. Each step builds on what already delivers.</p>
+          <p class="step-desc">Clean, structured data is also the foundation that makes AI tools worth using — if that is a direction you want to explore.</p>
         </div>
       </div>
       <a rel="noopener noreferrer" href="https://calendly.com/danie-2wnt/30-min-consultation" target="_blank" class="btn-dark">Book a Call →</a>
@@ -458,7 +462,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 <section class="section-delivery" id="delivery" aria-label="Engagement Options">
   <div class="delivery-inner fade-in">
     <p class="eyebrow">Engagement</p>
-    <h2>Three Ways to <em>Engage</em></h2>
+    <h2>Four Ways to <em>Engage</em></h2>
     <p class="sub">Matched to the size of the problem. Start small, prove value, expand from there.</p>
     <div class="delivery-grid">
       <div class="delivery-card">
@@ -472,6 +476,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
       <div class="delivery-card">
         <h3>Hybrid Approach</h3>
         <p>Start with pre-built modules for immediate visibility, then extend with custom development for team-specific requirements. Faster initial results with the flexibility to grow.</p>
+      </div>
+      <div class="delivery-card">
+        <h3>Embedded / Fractional Analyst</h3>
+        <p>For teams that need more than a once-off project. I work alongside your team for several months — building the habits, processes, and capability that make data-driven decisions stick. The goal is that your team owns it when I step back.</p>
       </div>
     </div>
   </div>
